@@ -213,21 +213,29 @@
               </div>
               <div>
                 Used Skill :
-                <span class="text-blue-500"
-                  >Django Python PostgreSQL OracleSQL C#</span
+                <span class="text-blue-500 font-bold text-lg"
+                  >Django Python PostgreSQL OracleSQL C# Vue.js</span
                 >
               </div>
               <div class="ml-4">
                 <div>
                   기존의 C#으로 만들어진 LIME 프로젝트의 로직을 참고하여,
-                  Backend Django Framework와 Frontend Vue.js를 이용해 더 나은
-                  프로그램인 NADIA를 개발했습니다. 데이터베이스는 기존
-                  OracleSQL에서 Postgresql로 변경했습니다.
+                  Backend Django Framework를 이용해 더 나은 프로그램인 NADIA를
+                  개발했습니다. 데이터베이스는 기존 OracleSQL에서 Postgresql로
+                  변경했습니다.
                 </div>
                 <div>
                   담당한 파트는 시스템 관리, 기준 정보, 원무, 통계입니다. 서비스
                   오픈 후에는 유저 정보와 병원 정보 관리의 유지보수 업무도
                   추가로 맡았습니다.
+                </div>
+                <div>
+                  Backend 구조는 기존의 Django Framework에서 변경하여 api,
+                  repository, sql로 3가지 영역을 구분하여 사용했습니다. Django의
+                  view에 해당하는 부분을 api로 만들어 request type을 정하여 받은
+                  parameter를 repository에 넘기는 역할을 수행하였습니다.
+                  repository 에서는 Sql에 정리된 query문과 api에서 받은
+                  parameter를 parsing한 후 excute를 하는 역할을 하였습니다.
                 </div>
               </div>
             </div>
