@@ -1,3 +1,13 @@
 참고 포트폴리오
 https://dragonwarrior.vercel.app/
 https://portfolio-n4sn.vercel.app/
+
+
+배경색
+
+#BD2A2E
+#3B3936
+#B2BEBF
+#889C9B
+#486966
+Big Machine

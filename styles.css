@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
-  background-color: #1b1b1b;
+  background-color: #2a2a2a; /* 기본 배경색 */
   color: #ffffff;
 }
 
@@ -241,7 +241,6 @@ button:hover {
 
 #about {
   width: 100%;
-  max-width: 800px;
   padding: 50px 20px;
   text-align: left;
   box-sizing: border-box;
@@ -257,14 +256,29 @@ button:hover {
   line-height: 1.5;
 }
 
+#about,
+#work {
+  background-color: #b2bebf; /* About Me와 Work 섹션 배경색 */
+  color: #000; /* 글자색을 검정색으로 설정 */
+}
+
 .skills-container {
   display: flex;
   flex-wrap: wrap; /* 여러 줄로 나누기 */
-  justify-content: space-between; /* 열 간격 조정 */
+  justify-content: center; /* 가운데 정렬 */
+  max-width: 800px; /* 최대 너비 설정 */
+  margin: 0 auto; /* 가운데 정렬을 위한 마진 */
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .skill {
-  width: calc(50% - 10px); /* 두 개의 열로 나누기 */
+  width: calc(40% - 10px); /* 두 개의 열로 나누기 */
   margin: 10px 0; /* 위아래 여백 추가 */
 }
 
@@ -279,12 +293,4 @@ button:hover {
   background-color: #ff0055;
   height: 100%;
   transition: width 0.5s;
-}
-
-#skills {
-  width: 100%;
-  max-width: 800px; /* About Me와 동일한 최대 너비 설정 */
-  padding: 50px 20px; /* 패딩 추가 */
-  text-align: left; /* 텍스트 정렬 */
-  box-sizing: border-box; /* 박스 모델 설정 */
 }
