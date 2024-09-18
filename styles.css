@@ -280,3 +280,11 @@ button:hover {
   height: 100%;
   transition: width 0.5s;
 }
+
+#skills {
+  width: 100%;
+  max-width: 800px; /* About Me와 동일한 최대 너비 설정 */
+  padding: 50px 20px; /* 패딩 추가 */
+  text-align: left; /* 텍스트 정렬 */
+  box-sizing: border-box; /* 박스 모델 설정 */
+}
